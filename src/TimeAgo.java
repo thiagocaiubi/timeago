@@ -33,6 +33,6 @@ public class TimeAgo {
 		if (diff > 1) {
 			sufix ="s";
 		}
-		return diff + " "+ label + sufix+ " atrás";
+		return diff + " "+ label + sufix+ " atr√°s";
 	}
 }

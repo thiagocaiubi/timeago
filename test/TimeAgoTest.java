@@ -17,7 +17,7 @@ public class TimeAgoTest {
 		Calendar time = Calendar.getInstance();
 		time.add(Calendar.MINUTE, -1);
 		TimeAgo timeAgo = new TimeAgo(time);
-		Assert.assertEquals("1 minuto atr‡s", timeAgo.toString());
+		Assert.assertEquals("1 minuto atrÃ¡s", timeAgo.toString());
 	}
 	
 	@Test
@@ -25,7 +25,7 @@ public class TimeAgoTest {
 		Calendar time = Calendar.getInstance();
 		time.add(Calendar.MINUTE, -2);
 		TimeAgo timeAgo = new TimeAgo(time);
-		Assert.assertEquals("2 minutos atr‡s", timeAgo.toString());
+		Assert.assertEquals("2 minutos atrÃ¡s", timeAgo.toString());
 	}
 	
 	@Test
@@ -33,7 +33,7 @@ public class TimeAgoTest {
 		Calendar time = Calendar.getInstance();
 		time.add(Calendar.MINUTE, -59);
 		TimeAgo timeAgo = new TimeAgo(time);
-		Assert.assertEquals("59 minutos atr‡s", timeAgo.toString());
+		Assert.assertEquals("59 minutos atrÃ¡s", timeAgo.toString());
 	}
 	
 	@Test
@@ -41,7 +41,7 @@ public class TimeAgoTest {
 		Calendar time = Calendar.getInstance();
 		time.add(Calendar.HOUR, -1);
 		TimeAgo timeAgo = new TimeAgo(time);
-		Assert.assertEquals("1 hora atr‡s", timeAgo.toString());
+		Assert.assertEquals("1 hora atrÃ¡s", timeAgo.toString());
 	}
 	
 	@Test
@@ -49,7 +49,7 @@ public class TimeAgoTest {
 		Calendar time = Calendar.getInstance();
 		time.add(Calendar.HOUR, -2);
 		TimeAgo timeAgo = new TimeAgo(time);
-		Assert.assertEquals("2 horas atr‡s", timeAgo.toString());
+		Assert.assertEquals("2 horas atrÃ¡s", timeAgo.toString());
 	}
 	
 	@Test
@@ -57,7 +57,7 @@ public class TimeAgoTest {
 		Calendar time = Calendar.getInstance();
 		time.add(Calendar.HOUR, -23);
 		TimeAgo timeAgo = new TimeAgo(time);
-		Assert.assertEquals("23 horas atr‡s", timeAgo.toString());
+		Assert.assertEquals("23 horas atrÃ¡s", timeAgo.toString());
 	}
 	
 	@Test
@@ -66,7 +66,7 @@ public class TimeAgoTest {
 		time.add(Calendar.HOUR, -24);
 		time.add(Calendar.SECOND, 1);
 		TimeAgo timeAgo = new TimeAgo(time);
-		Assert.assertEquals("23 horas atr‡s", timeAgo.toString());
+		Assert.assertEquals("23 horas atrÃ¡s", timeAgo.toString());
 	}
 	
 	@Test
@@ -74,7 +74,7 @@ public class TimeAgoTest {
 		Calendar time = Calendar.getInstance();
 		time.add(Calendar.HOUR, -24);
 		TimeAgo timeAgo = new TimeAgo(time);
-		Assert.assertEquals("1 dia atr‡s", timeAgo.toString());
+		Assert.assertEquals("1 dia atrÃ¡s", timeAgo.toString());
 	}
 	
 	@Test
@@ -82,7 +82,6 @@ public class TimeAgoTest {
 		Calendar time = Calendar.getInstance();
 		time.add(Calendar.DAY_OF_YEAR, -2);
 		TimeAgo timeAgo = new TimeAgo(time);
-		Assert.assertEquals("2 dias atr‡s", timeAgo.toString());
+		Assert.assertEquals("2 dias atrÃ¡s", timeAgo.toString());
 	}
-	
 }
