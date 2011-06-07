@@ -2,6 +2,11 @@ import java.util.Calendar;
 
 public class TimeAgo {
 
+	private static final int MINUTO = 60;
+	private static final int HORA = MINUTO * 60;
+	private static final int DIA = HORA * 24;
+	private static final int SEMANA = DIA * 7;
+	
 	private long diferenca;
 
 	public TimeAgo(Calendar date) {
@@ -10,10 +15,6 @@ public class TimeAgo {
 	}
 
 	public String toString() {
-		int MINUTO = 60;
-		int HORA = MINUTO * 60;
-		int DIA = HORA * 24;
-		int SEMANA = DIA * 7;
 		if (diferenca < MINUTO) {
 			return "agora";
 		} else if(diferenca < HORA) {
